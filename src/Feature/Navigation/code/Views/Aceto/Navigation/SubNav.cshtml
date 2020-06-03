@@ -1,0 +1,26 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Aceto.XA.Feature.Navigation.Models.SubNavigationRenderingModel
+
+@Model.MessageIsEmpty
+@if (Model != null && Model.SubNavItems.Any())
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "search-box", Model.Attributes)>
+        <div class="component-content">
+            <div class="col-lg-12 ptb20 act-Innermenu">
+                @foreach (var child in Model.SubNavItems)
+                {
+                    <a href="@(Sitecore.Context.PageMode.IsExperienceEditor?"#":child.Url)">
+                        <div class="squaremenu-act boxmenu @(child.Title.ToString()==Model.CurrentItem? "active":"")">
+                            <div class="pt10">
+                                <label>@(child.Title.ToString() == Model.CurrentItem ? child.ActiveIcon : child.Icon)</label>
+                                <p class="sqMtext">@child.Title</p>
+                            </div>
+                        </div>
+                    </a>
+                }
+
+            </div>
+        </div>
+    </div>
+}

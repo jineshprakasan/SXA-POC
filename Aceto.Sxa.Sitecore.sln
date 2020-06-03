@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29609.76
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{D6E8A15B-6F0C-43A3-83E2-1ADA9AE96EBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Search", "Search", "{19D4CF0A-FBE1-4E6E-A43D-94BCACA5AD57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aceto.XA.Feature.Search", "src\Feature\Search\code\Aceto.XA.Feature.Search.csproj", "{187E34A6-9280-4651-831A-65818A3B61A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{CC675053-F508-436E-BEF4-082A4C76CC84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ORM", "ORM", "{E7AE6DED-90BD-4E28-8483-6E6E17B99D33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aceto.XA.Foundation.ORM", "src\Foundation\ORM\code\Aceto.XA.Foundation.ORM.csproj", "{0290960E-752B-41A3-8950-301082821F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Navigation", "Navigation", "{E0BA22DB-A7CA-466E-BE84-E34E3F77D19C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aceto.XA.Feature.Navigation", "src\Feature\Navigation\code\Aceto.XA.Feature.Navigation.csproj", "{F07F310A-BF24-4523-89B0-6BC38F259A28}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{187E34A6-9280-4651-831A-65818A3B61A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{187E34A6-9280-4651-831A-65818A3B61A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{187E34A6-9280-4651-831A-65818A3B61A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{187E34A6-9280-4651-831A-65818A3B61A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0290960E-752B-41A3-8950-301082821F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0290960E-752B-41A3-8950-301082821F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0290960E-752B-41A3-8950-301082821F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0290960E-752B-41A3-8950-301082821F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F07F310A-BF24-4523-89B0-6BC38F259A28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F07F310A-BF24-4523-89B0-6BC38F259A28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F07F310A-BF24-4523-89B0-6BC38F259A28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F07F310A-BF24-4523-89B0-6BC38F259A28}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{19D4CF0A-FBE1-4E6E-A43D-94BCACA5AD57} = {D6E8A15B-6F0C-43A3-83E2-1ADA9AE96EBC}
+		{187E34A6-9280-4651-831A-65818A3B61A6} = {19D4CF0A-FBE1-4E6E-A43D-94BCACA5AD57}
+		{E7AE6DED-90BD-4E28-8483-6E6E17B99D33} = {CC675053-F508-436E-BEF4-082A4C76CC84}
+		{0290960E-752B-41A3-8950-301082821F04} = {E7AE6DED-90BD-4E28-8483-6E6E17B99D33}
+		{E0BA22DB-A7CA-466E-BE84-E34E3F77D19C} = {D6E8A15B-6F0C-43A3-83E2-1ADA9AE96EBC}
+		{F07F310A-BF24-4523-89B0-6BC38F259A28} = {E0BA22DB-A7CA-466E-BE84-E34E3F77D19C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FA80533C-5751-40E7-B274-601698EDC236}
+	EndGlobalSection
+EndGlobal

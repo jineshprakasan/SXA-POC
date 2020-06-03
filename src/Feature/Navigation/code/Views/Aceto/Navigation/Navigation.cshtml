@@ -1,0 +1,33 @@
+﻿@using Sitecore.XA.Foundation.MarkupDecorator.Extensions
+@using Sitecore.XA.Foundation.SitecoreExtensions.Extensions
+@model Aceto.XA.Feature.Navigation.Models.NavigationRenderingModel
+@if (Model != null && Model.Navigations != null && Model.Navigations.Any())
+{
+    <div @Html.Sxa().Component(Model.Rendering.RenderingCssClass ?? "search-box", Model.Attributes)>
+        <div class="component-content">
+            <ul class="nav navbar-nav">
+                @foreach (var item in Model.Navigations)
+                {
+
+                    if (item.Navigations != null)
+                    {
+                        <li class="@(item.IsActive ? "active" : "") dropdown">
+                            <a href="@item.NavigationUrl" class="dropdown-toggle" data-toggle="dropdown">@item.NavigationTitle<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                @foreach (var childItem in item.Navigations)
+                                {
+                                    <li><a href="@childItem.NavigationUrl">@childItem.NavigationTitle</a></li>
+                                }
+                            </ul>
+                        </li>
+                    }
+                    else
+                    {
+                        <li @(item.IsActive ? "class=active" : "")><a href="@item.NavigationUrl">@item.NavigationTitle</a></li>
+                    }
+                }
+
+            </ul>
+        </div>
+    </div>
+}
